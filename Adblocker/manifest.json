@@ -1,5 +1,6 @@
 {
     "name": "Tobis Adblocker",
+    "description": "One extension to rule them all",
     "version": "1.0",
     "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "background": {
