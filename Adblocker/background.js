@@ -8,7 +8,10 @@ chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
       return {cancel: !blocklist.every(checkurl, details.url)};
     },
-    {urls: ["<all_urls>"]},
+    {urls: ["<all_urls>"],
+    types: ['sub_frame'],
+  },
+    
     ["blocking"]
   );
 
